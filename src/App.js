@@ -19,7 +19,7 @@ class App extends Component {
     const name = this.refs.name.value;
 
     setTimeout( () => {
-      fetch(`http://api.github.com/users/${name}`)
+      fetch(`https://api.github.com/users/${name}`)
       .then(response => response.json())
       .then(data => {
 
